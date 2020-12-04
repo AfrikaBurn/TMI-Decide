@@ -9,8 +9,8 @@ services:
     networks:
       - main
     ports:
-      - 80:80
-      - 443:443
+      - 21000:80
+      - 21443:443
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d:rw
       - ./nginx/vhost.d:/etc/nginx/vhost.d:rw
